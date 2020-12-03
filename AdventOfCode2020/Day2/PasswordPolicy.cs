@@ -12,7 +12,7 @@ namespace AdventOfCode2020.Day2
 
         public PasswordPolicy(string line)
         {
-            var regex = Regex.Match(line, @"(\d+)-(\d+)\s(\w):\s(.*)");
+            var regex = Regex.Match(line, @"^(\d+)-(\d+)\s(\w):\s(.*)$");
             Min = int.Parse(regex.Groups[1].Value);
             Max = int.Parse(regex.Groups[2].Value);
             Value = char.Parse(regex.Groups[3].Value);
