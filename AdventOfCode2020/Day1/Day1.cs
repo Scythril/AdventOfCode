@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 
-namespace AdventOfCode2020
+namespace AdventOfCode2020.Day1
 {
     class Day1 : BaseClass
     {
