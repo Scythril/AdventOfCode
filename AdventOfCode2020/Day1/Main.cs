@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace AdventOfCode2020.Day1
 {
-    class Day1 : BaseClass
+    class Main : BaseClass
     {
         public async Task<string> Part1()
         {

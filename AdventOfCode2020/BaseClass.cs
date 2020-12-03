@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace AdventOfCode2020
@@ -10,7 +11,7 @@ namespace AdventOfCode2020
         {
             try
             {
-                return await File.ReadAllLinesAsync(Path.Combine(GetType().Name, "input.txt"));
+                return await File.ReadAllLinesAsync(Path.Combine(DayName, "input.txt"));
             }
             catch (IOException e)
             {
@@ -20,5 +21,7 @@ namespace AdventOfCode2020
 
             return null;
         }
+
+        public string DayName => GetType().Namespace.Split('.').Last();
     }
 }

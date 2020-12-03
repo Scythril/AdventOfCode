@@ -7,8 +7,8 @@ namespace AdventOfCode2020
     {
         static async Task Main(string[] args)
         {
-            var day = new Day2.Day2();
-            Console.WriteLine($"***** {day.GetType().Name} *****");
+            var day = new Day3.Main();
+            Console.WriteLine($"***** {day.DayName} *****");
             Console.WriteLine("\n***** Part 1 *****");
             Console.WriteLine(await day.Part1());
 
