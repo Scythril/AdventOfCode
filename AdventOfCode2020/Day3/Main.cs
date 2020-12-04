@@ -9,13 +9,13 @@ namespace AdventOfCode2020.Day3
     {
         const char TREE = '#';
 
-        public async Task<string> Part1()
+        public new async Task<string> Part1()
         {
             var input = await ReadInput();
             return RunSlope(input).ToString();
         }
 
-        public async Task<string> Part2()
+        public new async Task<string> Part2()
         {
             var input = await ReadInput();
             var slopes = new List<Point>

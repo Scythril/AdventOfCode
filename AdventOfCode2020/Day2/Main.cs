@@ -8,7 +8,7 @@ namespace AdventOfCode2020.Day2
 {
     class Main : BaseClass
     {
-        public async Task<string> Part1()
+        public new async Task<string> Part1()
         {
             var input = await ReadInput();
             var validPasswords = 0;
@@ -22,7 +22,7 @@ namespace AdventOfCode2020.Day2
             return validPasswords.ToString();
         }
 
-        public async Task<string> Part2()
+        public new async Task<string> Part2()
         {
             var input = await ReadInput();
             var validPasswords = 0;

@@ -5,7 +5,7 @@ namespace AdventOfCode2020.Day1
 {
     class Main : BaseClass
     {
-        public async Task<string> Part1()
+        public new async Task<string> Part1()
         {
             var input = (await ReadInput()).Select(x => int.Parse(x)).ToList();
             for (var pointer = 0; pointer < input.Count; pointer++)
@@ -22,7 +22,7 @@ namespace AdventOfCode2020.Day1
             return "No answer.";
         }
 
-        public async Task<string> Part2()
+        public new async Task<string> Part2()
         {
             var input = (await ReadInput()).Select(x => long.Parse(x)).ToList();
             for (var i = 0; i < input.Count; i++)
