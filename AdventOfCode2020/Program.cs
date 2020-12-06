@@ -9,7 +9,7 @@ namespace AdventOfCode2020
         static async Task Main(string[] args)
         {
             Console.WriteLine($"Start time: {DateTimeOffset.Now:O}");
-            var day = new Day5.Main { Debug = true };
+            var day = new Day6.Main { Debug = true };
             var stopwatch = new Stopwatch();
 
             stopwatch.Start();
