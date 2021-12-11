@@ -90,7 +90,7 @@ namespace AdventOfCode2017
                             {
                                 threads[curThread].Registers[inst[1]] = threads[curThread == 0 ? 1 : 0].GetNextMessage();
                             }
-                            catch (InvalidOperationException ioe)
+                            catch (InvalidOperationException)
                             {
                                 threads[curThread].Waiting = true;
                                 threads[curThread].InstructionPosition--;

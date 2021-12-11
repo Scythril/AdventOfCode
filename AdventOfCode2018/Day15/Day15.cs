@@ -7,9 +7,9 @@ namespace AdventOfCode2018.Day15
 {
     class Day15
     {
-        private const bool WaitBetweenTurns = false;
-        private const bool WriteHP = true;
-        private const bool WriteGrids = true;
+        private bool WaitBetweenTurns = false;
+        private bool WriteHP = true;
+        private bool WriteGrids = true;
 
         public long Part1(string[] input)
         {
@@ -38,7 +38,7 @@ namespace AdventOfCode2018.Day15
 
                             ProcessAttacks(units, unit);
                         }
-                        catch (CombatOverException coe)
+                        catch (CombatOverException)
                         {
                             combatOver = true;
                             break;
@@ -95,7 +95,7 @@ namespace AdventOfCode2018.Day15
                                     }
                                 }
                             }
-                            catch (CombatOverException coe)
+                            catch (CombatOverException)
                             {
                                 combatOver = true;
                                 break;
