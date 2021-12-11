@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 
 Console.WriteLine($"Start time: {DateTimeOffset.Now:O}");
-var day = new AdventOfCode2021.Day5.Main { Debug = false };
+var day = new AdventOfCode2021.Day6.Main { Debug = true };
 var stopwatch = new Stopwatch();
 
 stopwatch.Start();
